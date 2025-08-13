@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy 6th Month Anniversary ❤️</title>
+  <meta name="description" content="A sweet anniversary website." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main">
+      <div class="brand">For <span>Us</span></div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#letter">Letter</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div>
+      <div class="badge" aria-label="Occasion">
+        <span>💞</span> Happy 6th Month Anniversary
+      </div>
+      <h1>AJ & Gia <span style="background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">6 Months</span></h1>
+      <p class="lead">For all the love you give me, I decided to make a lil sumn sumn for you!!!</p>
+
+      <div class="hero-card" role="group" aria-label="Celebrate">
+        <button class="primary-btn" id="confettiBtn" type="button">Make it rain hearts all over the photo!!</button>
+      </div>
+    </div>
+
+    <figure style="position:relative">
+      <img src="assets/car.jpg" alt="Us, smiling together" style="border-radius: var(--radius); border:1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); aspect-ratio: 4 / 3; object-fit: cover; background: rgba(255,255,255,.03);" />
+      <div class="heart-field" aria-hidden="true" id="heartField"></div>
+    </figure>
+  </main>
+
+  <section id="timeline" aria-label="Our timeline">
+    <h2>First Moments</h2>
+    <div class="timeline">
+      <article class="moment"><div class="dot" aria-hidden="true"></div><h3>First Hello</h3><p class="muted">We started talking and I instantly knew I wanted you in my life.</p></article>
+      <article class="moment"><div class="dot" aria-hidden="true"></div><h3>First Date</h3><p class="muted">I'll never forget eating wingstop on your bed feeling like I could never be awkward around you.</p></article>
+    </div>
+  </section>
+
+  <section id="gallery" aria-label="Gallery of memories">
+    <h2>Cute Photos</h2>
+    <p class="muted">A few of my favorite memories with you</p>
+    <div class="grid" role="list">
+      <figure class="card" role="listitem"><a href="assets/sleeper.jpg"><img src="assets/sleeper.jpg" alt=""></a></figure>
+      <figure class="card" role="listitem"><a href="assets/park.jpg"><img src="assets/park.jpg" alt="" class="fit-frame"></a></figure>
+      <figure class="card" role="listitem"><a href="assets/bed.jpg"><img src="assets/bed.jpg" alt=""></a></figure>
+      <figure class="card" role="listitem"><a href="assets/july.jpg"><img src="assets/july.jpg" alt=""></a></figure>
+      <figure class="card" role="listitem"><a href="assets/smile.jpg"><img src="assets/smile.jpg" alt=""></a></figure>
+      <figure class="card" role="listitem"><a href="assets/kiss.jpg"><img src="assets/kiss.jpg" alt=""></a></figure>
+    </div>
+  </section>
+
+  <section id="letter" aria-label="Love letter">
+    <h2>A Little Letter</h2>
+    <div class="letter">
+      <p id="typewriter" data-text="I love the way you teach me things even though you think it's basic knowledge 😭and I love the way you're so vivid when you tell me about your dreams. Thank you for being so patient with me and I can't wait for the months/years to come. I’m so lucky to be yours."></p><span class="cursor" aria-hidden="true">&nbsp;</span>
+    </div>
+    <div style="margin-top: .8rem">
+      <button class="primary-btn" id="retype" type="button">Replay the awesome letter</button>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Photo viewer">
+    <button class="close" id="closeLightbox" type="button">Close ✕</button>
+    <img id="lightboxImg" alt="Expanded memory" />
+  </div>
+
+  <footer>
+    <p class="tiny">I love you, happy anniversary</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
